@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue"
+    tools:context=".MainActivity">
+
+
+    <www.navigation.custombottomnavigation.CurvedBottomNavigationView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/customBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:menu="@menu/bottom_menu"
+        app:labelVisibilityMode="labeled"
+        app:itemIconTint="@drawable/bottom_selector_color"
+        app:itemTextColor="@drawable/bottom_selector_color"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/float_action"
+            android:onClick="floatHome"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_float"
+            app:elevation="10dp"
+            app:fabSize="auto"
+            app:backgroundTint="@color/colorWhite"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"/>
+
+
+</RelativeLayout>
